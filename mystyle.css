@@ -1,143 +1,67 @@
-BODY {
-        background-image: url("topbanner.png"); /*style="float:left";*/
-        background-position:120px 0px;
-	/*background-color:#DCDCDC;*/
-        background-color:#FFFFFF;
-        /*background-position: left top;*/
-        background-repeat: no-repeat;
-        width: 1cm;
-        margin-top: 130px; 
-	}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
 
-H1 {
-        margin-left: 3cm;
-        margin-top: 2cm;
-        font-family:  'Courier New', monospace, arial, verdana, "Times New Roman", verdana;
-        font-size: 32px;
-        text-align: center;
-        width: 18cm;
-        }
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
 
-H2 {
-        margin-left: 3cm;
-        margin-top: 2;
-        font-family:  'Courier New', monospace, arial, verdana, "Times New Roman", verdana;
-        font-size: 18px;
-        text-align: center;
-        width: 18cm;
-        }
-
-H3 {
-        margin-left: 3cm;
-        margin-top: 0cm;
-        font-family:  'Courier New', monospace, arial, verdana, "Times New Roman", verdana;
-        font-size: 18px;
-        text-align: left;
-        width: 18cm;
-	font-style:italic
-        }
-
-p {
-        margin-left: 3cm;
-        margin-top: 2cm;
-        font-family: 'Courier New', monospace, arial, verdana, "Times New Roman", verdana;
-        text-align: justify;
-        width: 18cm;
-        }
-
-p.parag {
-        margin-top: 0cm;
-        margin-left: 3cm;
-        font-family: 'Courier New', monospace, arial, verdana, "Times New Roman", verdana;
-        font-size: 14px;
-        text-align: justify;
-        width: 18cm;
-        }
-
-p.gener {
-        margin-top: 0cm;
-        margin-left: 3cm;
-        font-family: 'Courier New', monospace, arial, verdana, "Times New Roman", verdana;
-        font-size: 16px;
-        text-align: center;
-        width: 18cm;
-        }
-
-#endtext {
-	position: fixed;
-	top: 0.1cm;
-	left: 3cm;
-	font-family: 'Courier New', monospace, arial, euclid, garamond, "Times New Roman", verdana;
-        border-bottom: thin solid #333333;
-	width: 18cm;
-	}
-
-ul      {
-        margin-left: 190px;
-        padding: 0;
-        width: 18cm;
-        /*border-bottom: thin solid #666666;*/
-        }
-
-#navlist li {
-        display: inline;
-        /*text-align: center;*/
-        margin-left: 0cm;
-        padding-top: 0;
-	padding-left: 0px;	
-        padding-right: 15px;
-        list-style-type: none;
-        font-size: 18px;
-        font-family: arial, verdana, "Times New Roman", verdana;
-        float:center;
-        }
-
-a:link {
-        /*display: block;
-        width: 15px;*/
-        color: #4C4D4F;
-        }
-
-a:visited {
-        color: #4C4D4F;
-        }
-
-a:hover {
-        color: #4C4D4F;
-        }
-
-a.hdr:link {
-        color: #F0EDE4;
-        }
-
-a.hdr:visited {
-        color: #F0EDE4;
-        }
-
-a:hdr {
-        color: #F0EDE4;
-        }
+/* Style the side navigation */
+.sidenav {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+}
 
 
+/* Side navigation links */
+.sidenav a {
+  color: white;
+  padding: 16px;
+  text-decoration: none;
+  display: block;
+}
 
-A {
-        text-decoration: none;
-        }
+/* Change color on hover */
+.sidenav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Style the content */
+.content {
+  margin-left: 200px;
+  padding-left: 20px;
+}
+</style>
+</head>
+<body>
+
+<div class="sidenav">
+  <a href="#">Link</a>
+  <a href="#">Link</a>
+  <a href="#">Link</a>
+</div>
+
+<div class="content">
+  <h2>CSS Template</h2>
+  <p>A full-height, fixed sidenav and content.</p>
+</div>
+
+</body>
+</html>
 
 
-
-table	{
-	margin-left: 3cm;
-        font-family: 'Courier New', monospace, arial, verdana, "Times New Roman", verdana;
-	border:0 solid green;
-	/*table-layout: fixed;*/
-    	width: 800px;
-	}
-td      {
-	margin-left: 3cm;
-	}
-th	{
-	padding-left: 3cm;
-	color:white;
-	/*width: 900px;*/
-	}
